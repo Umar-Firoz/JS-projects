@@ -1,1 +1,63 @@
 @import 'tailwindcss';
+
+.screen {
+  padding: 1rem;
+  display: none;
+  text-align: center;
+}
+.screen.active {
+  display: block;
+}
+.screen.active > p,
+.screen.active button {
+  margin-bottom: 16px;
+}
+
+#question-text {
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.quiz-info {
+}
+.answer-btn {
+  background-color: #f8f0e5;
+  color: #333;
+  border: 2px solid #ffd6ab;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.answer-btn:hover {
+  background-color: #ffe3c9;
+  border-color: #ffae00;
+}
+.answer-btn.correct {
+  background-color: #dbffa7;
+  border-color: green;
+  color: green;
+}
+.answer-btn.incorrect {
+  background-color: #ffa7a7;
+  border-color: #ff0c0c;
+  color: #ff003a;
+}
+.progress-bar {
+  height: 10px;
+  background-color: #f8f0e5;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.progress {
+  height: 100%;
+  background-color: #ff9620;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+button:hover {
+  background-color: black;
+  cursor: pointer;
+}

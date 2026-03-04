@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>Quiz</title>
+  </head>
+  <body
+    class="bg-[#f5efe5] flex items-center justify-center h-screen font-sans p-1"
+  >
+    <div
+      class="container bg-white rounded-2xl max-w-[600px] overflow-hidden relative"
+    >
+      <div id="start-screen" class="screen active">
+        <h1 class="text-[64px] font-semibold text-orange-500">Quiz time!</h1>
+        <p class="text-[22px]">Test Your knowledge with these fun questions</p>
+        <button
+          id="start-btn"
+          class="w-[120px] h-[40px] bg-orange-500 text-[22px] text-white rounded-[8px] mb-[44px]"
+        >
+          Start Test
+        </button>
+      </div>
+      <div id="quiz-screen" class="screen ">
+        <div class="quiz-header mb-6">
+          <h2 id="question-text" class="text-grey text-[1.5rem] mb-4">
+            Question goes here
+          </h2>
+          <div class="quiz-info flex justify-between text-[#666] mb-2 px-4">
+            <p>
+              Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+            </p>
+            <p>Score: <span id="score">0</span></p>
+          </div>
+        </div>
+
+        <div
+          id="answer-container"
+          class="answers-container flex flex-col gap-2.5 mb-6"
+        >
+          <button class="answer-btn"></button>
+          <button class="answer-btn"></button>
+          <button class="answer-btn"></button>
+          <button class="answer-btn"></button>
+        </div>
+
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+      </div>
+      <div id="result-screen" class="screen">
+        <h1 class="text-[48px] font-semibold text-orange-500 mb-4">Quiz Results</h1>
+        <div class="result-info p-[20px] rounded-2xl bg-amber-100 mb-4">
+          <p class="text-xl">
+            You scored <span id="final-score">out of </span>
+            <span id="max-score">5</span>
+          </p>
+          <div id="result-message" class="text-[32px] font-medium text-blue-800">
+            Good Job! Keep Learning!
+          </div>
+        </div>
+        <button
+          id="restart-btn"
+          class="py-2 px-4 bg-orange-500 text-[22px] text-white rounded-[8px] mb-2"
+        >
+          Restart Test
+        </button>
+      </div>
+    </div>
+    <script src = "script.js"></script>
+  </body>
+</html>
