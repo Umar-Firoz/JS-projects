@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="bg-green-50 flex items-center justify-center min-h-screen">
+    <div class="container text-center w-full p-5">
+      <h1 class="text-5xl font-semibold mb-6">Simple Kanban Board</h1>
+      <div
+        class="board flex justify-around items-start w-full max-w-300 gap-5 lg:flex-row md:flex-col"
+      >
+        <div
+          class="list shadow-sm p-3 lg:w-[30%] md:w-[80%] bg-[#e2e4e8] rounded-xl min-h-100"
+          id="list1"
+        >
+          <h2 class="text-3xl font-medium mb-3">To Do</h2>
+          <div
+            class="card text-[20px] p-2 bg-white mb-2 shadow-sm rounded-[5px] cursor-grab active:cursor-grabbing active:scale-[1.05] active:shadow-lg transition"
+
+            id="card1"
+          >
+            Wash Dishes
+          </div>
+          <div
+            class="card text-[20px] p-2 bg-white mb-2 shadow-sm rounded-[5px] cursor-grab active:cursor-grabbing active:scale-[1.05] active:shadow-lg transition"
+            
+            id="card2"
+          >
+            Buy Groceries
+          </div>
+        </div>
+        <div
+          class="list shadow-sm p-3 lg:w-[30%] md:w-[80%] bg-[#e2e4e8] rounded-xl min-h-100"
+          id="list2"
+        >
+          <h2 class="text-3xl font-medium mb-3">In Progress</h2>
+          <div
+            class="card text-[20px] p-2 bg-white mb-2 shadow-sm rounded-[5px] cursor-grab active:cursor-grabbing active:scale-[1.05] active:shadow-lg transition"
+           
+            id="card3"
+          >
+            Cooking
+          </div>
+        </div>
+        <div
+          class="list shadow-sm p-3 lg:w-[30%] md:w-[80%] bg-[#e2e4e8] rounded-xl min-h-100"
+          id="list3"
+        >
+          <h2 class="text-3xl font-medium mb-3">Done</h2>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
