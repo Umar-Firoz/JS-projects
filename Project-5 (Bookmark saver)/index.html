@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Bookmark Saver</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="bg-cyan-50 min-h-screen flex items-center justify-center p-4 md:p-0">
+    <div
+      class="container shadow-lg bg-white p-4 md:p-8 max-w-150 flex flex-col gap-4 md:gap-8 rounded-2xl"
+    >
+      <div class="header text-center text-green-600 font-bold text-4xl md:text-5xl">
+        Bookmark Saver
+      </div>
+      <div class="input flex flex flex-col gap-5">
+        <input
+          id="name"
+          type="text"
+          placeholder="Bookmark Name"
+          class="p-2 md:p-3 outline-none text-[20px] font-medium w-full text-grey-300 rounded-[5px] border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition focus:placeholder-transparent"
+        />
+        <input
+          id="url"
+          type="text"
+          placeholder="Bookmark URL"
+          class="p-2 md:p-3 outline-none text-[20px] font-medium w-full text-grey-300 rounded-[5px] border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition focus:placeholder-transparent"
+        />
+        <div
+          class="addBtn w-full bg-green-500 text-white p-2 md:p-3 text-center text-[20px] font-medium rounded-[5px] shadow cursor-pointer active:bg-green-900"
+        >
+          Add Bookmark
+        </div>
+      </div>
+      <div class="bookmarks-container flex flex-col gap-4  ">
+      </div>
+    </div>
+    <script type="module" src = "./scripts/script.js"></script>
+  </body>
+</html>
