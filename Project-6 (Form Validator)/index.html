@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body
+    class="bg-olive-100 flex items-center justify-center min-h-screen p-4 md:p-0"
+  >
+    <div
+      class="container bg-white rounded-2xl max-w-120 p-6 shadow-lg flex flex-col gap-4"
+    >
+      <div class="header w-full text-3xl md:text-4xl font-semibold text-center">
+        Register
+      </div>
+      <form action="/sumbit">
+        <label for="username" class="text-[20px] font-medium text-gray-600"
+          >User Name</label
+        >
+        <input
+          class="w-full p-2 text-[20px] rounded-[5px] outline-none border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 mt-2 mb-5 transition"
+          placeholder="Username Here"
+          type="text"
+          id="username"
+          name="username"
+        />
+x2
+        <p id="usernameError" class="text-red-500 text-sm -mt-4 hidden">
+          Username must be at least 3 characters
+        </p>
+        <label for="email" class="text-[20px] font-medium text-gray-600"
+          >Email</label
+        >
+        <input
+          class="w-full p-2 text-[20px] rounded-[5px] outline-none border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 mt-2 mb-5"
+          placeholder="Email Here"
+          type="email"
+          id="email"
+          name="email"
+        />
+        <p id="emailError" class="text-red-500 text-sm absolute -mt-4 hidden">
+          enter correct email id
+        </p>
+        <label for="password" class="text-[20px] font-medium text-gray-600"
+          >Password</label
+        >
+        <input
+          class="w-full p-2 text-[20px] rounded-[5px] outline-none border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 mt-2 mb-5"
+          placeholder="Enter Password"
+          type="password"
+          id="password"
+          name="password"
+        />
+        <p
+          id="passwordError"
+          class="text-red-500 text-sm absolute -mt-4 hidden"
+        >
+          password must be at least 8 character long
+        </p>
+        <label
+          for="confirmPassword"
+          class="text-[20px] font-medium text-gray-600 mt-4"
+          >Confirm Password</label
+        >
+        <input
+          class="w-full p-2 text-[20px] rounded-[5px] outline-none border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 mt-2 mb-5"
+          placeholder="Confirm Password"
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+        />
+        <p id="confirmError" class="text-red-500 text-sm absolute -mt-4 hidden">
+          password mismatch
+        </p>
+      </form>
+      <div
+        class="sumbit-btn w-full text-center bg-blue-400 text-white p-3 text-[20px] font-medium rounded-[5px] shadow cursor-pointer active:bg-blue-700"
+      >
+        Register
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
